@@ -8,76 +8,103 @@ class Program
         double salary = 0;
         int creditScore = 0;
         bool criminalRecord = false;
+        double P = 0;
+        double annualInterestRate = 0;
+        int n = 0;
 
         Console.WriteLine("==Mortgage Calculator==");
 
         
-        Console.Write("Enter your salary: ");
-        if (!double.TryParse(Console.ReadLine(), out salary))
+        while (true)
         {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
+            Console.Write("Enter your salary: ");
+            if (!double.TryParse(Console.ReadLine(), out salary))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+            break; 
         }
 
         
-        Console.Write("Enter your credit score: ");
-        if (!int.TryParse(Console.ReadLine(), out creditScore))
+        while (true)
         {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
+            Console.Write("Enter your credit score: ");
+            if (!int.TryParse(Console.ReadLine(), out creditScore))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+
+            
+            if (creditScore <= 300)
+            {
+                Console.WriteLine("You are not eligible for the loan due to low credit score.");
+                return; 
+            }
+            break; 
         }
 
         
-        if (creditScore <= 300)
+        while (true)
         {
-            Console.WriteLine("You are not eligible for the loan due to low credit score.");
-            return;
+            Console.Write("Do you have a criminal record? (true/false): ");
+            if (!bool.TryParse(Console.ReadLine(), out criminalRecord))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+
+            
+            if (criminalRecord)
+            {
+                Console.WriteLine("You are not eligible for the loan due to criminal record.");
+                return; // Exit only if condition fails
+            }
+            break; 
         }
 
         
-        Console.Write("Do you have a criminal record? (true/false): ");
-        if (!bool.TryParse(Console.ReadLine(), out criminalRecord))
+        while (true)
         {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
+            Console.Write("Enter the loan amount: ");
+            if (!double.TryParse(Console.ReadLine(), out P))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+
+            
+            if (P > salary * 2)
+            {
+                Console.WriteLine("You are not eligible for the loan because the loan amount is more than twice your salary.");
+                return; 
+            }
+            break; // Passed eligibility
         }
 
         
-        if (criminalRecord == true)
+        while (true)
         {
-            Console.WriteLine("You are not eligible for the loan due to criminal record.");
-            return;
+            Console.Write("Enter the annual interest rate (in %): ");
+            if (!double.TryParse(Console.ReadLine(), out annualInterestRate))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+            break; 
         }
 
         
-        Console.Write("Enter the loan amount: ");
-        if (!double.TryParse(Console.ReadLine(), out double P))
+        while (true)
         {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
-        }
-
-        
-        if (P > salary * 2)
-        {
-            Console.WriteLine("You are not eligible for the loan because the loan amount is more than twice your salary.");
-            return;
-        }
-
-        
-        Console.Write("Enter the annual interest rate (in %): ");
-        if (!double.TryParse(Console.ReadLine(), out double annualInterestRate))
-        {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
-        }
-
-        
-        Console.Write("Enter the loan term (in years): ");
-        if (!int.TryParse(Console.ReadLine(), out int n))
-        {
-            Console.WriteLine("Invalid input! Try again.");
-            return;
+            Console.Write("Enter the loan term (in years): ");
+            if (!int.TryParse(Console.ReadLine(), out n))
+            {
+                Console.WriteLine("Invalid input! Try again.");
+                continue;
+            }
+            break; 
         }
 
         
@@ -95,5 +122,6 @@ class Program
         Console.WriteLine($"Total Interest Paid: {totalInterest.ToString("C", BD)}");
         Console.WriteLine("\nThank you for using the Mortgage Calculator!");
         Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
     }
 }
