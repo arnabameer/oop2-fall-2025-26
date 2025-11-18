@@ -1,0 +1,15 @@
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\bin\Debug\net9.0\House.exe
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\bin\Debug\net9.0\House.deps.json
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\bin\Debug\net9.0\House.runtimeconfig.json
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\bin\Debug\net9.0\House.dll
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\bin\Debug\net9.0\House.pdb
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.AssemblyInfoInputs.cache
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.AssemblyInfo.cs
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.csproj.CoreCompileInputs.cache
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.sourcelink.json
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.dll
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\refint\House.dll
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.pdb
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\House.genruntimeconfig.cache
+C:\Users\arnab\Documents\Developer\oop2-fall-2025-26\Lab\House\House\obj\Debug\net9.0\ref\House.dll
